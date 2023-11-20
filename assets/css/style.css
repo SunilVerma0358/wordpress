@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: ' Konexy Personal Use';
+    src: url();
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font_family/Gilroy-Regular.ttf');
+}
+
+.font-gilroy {
+    font-family: 'Gilroy';
+}
+
+@font-face {
+    font-family: 'Konexy Personal Use';
+    src: url('../font_family/KonexyPersonalUse.otf');
+}
+
+.font-kpU {
+    font-family: 'Konexy Personal Use';
+}
+
+.font-Inter {
+    font-family: 'Inter';
+}
+
+.crossLine1 {
+    rotate: 45deg;
+    background-color: white
+}
+
+.crossLine2 {
+    rotate: 140deg;
+    bottom: 45%;
+    background-color: white
+}
+
+.view {
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000;
+    transition: all linear 0.3s !important;
+    transform: translate(-50% -50%);
+    z-index: 1;
+    justify-content: center;
+}
+
+.end-0 {
+    right: 0;
+}
+
+@media (min-width:1280px) {
+    .view {
+        flex-direction: row;
+        max-width: unset;
+        width: unset;
+        position: unset;
+        background-color: transparent;
+    }
+}
